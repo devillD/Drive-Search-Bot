@@ -1,5 +1,7 @@
 FROM devilldon/py3-alpine:stable
 
+ENV CRYPTOGRAPHY_DONT_BUILD_RUST=1
+
 WORKDIR /BOT
 
 RUN chmod -R 777 /BOT
